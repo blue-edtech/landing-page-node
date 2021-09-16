@@ -9,10 +9,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded());
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
-app.get("/index", (req, res) => {
   const devList = ["Backend", "Frontend", "Fullstack"];
   const analyticsList = ["Engenharia de dados", "Ciência de dados"];
   res.render("index", {
