@@ -12,9 +12,11 @@ app.use(express.urlencoded());
 app.get("/", (req, res) => {
   const devList = ["Backend", "Frontend", "Fullstack"];
   const analyticsList = ["Engenharia de dados", "Ciência de dados"];
+  
   setTimeout(() => {
-    message = ""
-  }, 1000)
+    message = "";
+  }, 1000);
+
   res.render("index", {
     titulo: "Blue",
     devList: devList,
